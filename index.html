@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Srujith - Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: black; /* Changed background to black */
+            color: white; /* Ensures text visibility */
+            text-align: center;
+        }
+
+        /* Social Icons Section */
+        .social-icons {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 20px;
+            padding: 15px;
+            background: black; /* Background set to black */
+            box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.1); /* Light shadow for contrast */
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: auto;
+            border-radius: 50%;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Header */
+        header {
+            background: black; /* Changed background to black */
+            color: white;
+            padding: 40px 10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: auto;
+            text-align: left;
+        }
+
+        /* Profile Image */
+        .profile-image {
+            flex-shrink: 0;
+            width: 180px;
+            text-align: center;
+            margin-left: 200px; /* Moves image slightly to the right */
+        }
+
+        img.profile-pic {
+            width: 150px;
+            height: 160px;
+            border-radius: 50%;
+            border: 3px solid #ddd;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        img.profile-pic:hover {
+            transform: scale(1.1);
+        }
+
+        /* Profile Details */
+        .profile-details {
+            flex-grow: 1;
+            padding-left: 20px;
+            margin-left: 10px;
+        }
+
+        .profile-details h1 {
+            margin: 0;
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+
+        .profile-details p {
+            margin-top: 5px;
+            font-size: 1.2em;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+
+        /* Sections */
+        section {
+            background: white; /* Keeps sections white */
+            color: black; /* Ensures readability inside sections */
+            margin: 25px auto;
+            padding: 25px;
+            border-radius: 12px;
+            max-width: 750px;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        section:hover {
+            transform: scale(1.02);
+        }
+
+        h2 {
+            color: #2C3E50;
+            border-bottom: 3px solid #4B79A1;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* Projects Section */
+        .projects ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .projects li {
+            background: black;
+            margin: 10px 0;
+            padding: 15px;
+            color:white;
+            border-radius: 8px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .projects li:hover {
+            background: #e3e3e3;
+        }
+
+        .projects li strong {
+            display: block;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        /* Links */
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .profile-image {
+                margin-bottom: 10px;
+                margin-left: 0;
+            }
+            .profile-details {
+                padding-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Social Icons -->
+    <div class="social-icons">
+        <a href="https://linkedin.com/in/sai-srujith" target="_blank">
+            <img src="linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="mailto:vemugantidevulapelli@gmail.com">
+            <img src="gmail.png" alt="Gmail">
+        </a>
+        <a href="tel:+917036673247">
+            <img src="telephone.png" alt="Phone">
+        </a>
+        <a href="https://github.com/SaiSrujith0/MIA" target="_blank">
+            <img src="git.png" alt="GitHub">
+        </a>
+    </div>
+
+    <header>
+        <div class="profile-image">
+            <img id="profilePic" class="profile-pic" src="SaiSrujith@Pic.jpg" alt="Profile Picture">
+        </div>
+        <div class="profile-details">
+            <h1>Sai Srujith</h1>
+            <p>Project Assistant at NIT Warangal <strong>|</strong> Trained Python Developer <b>|</b> Trained Salesforce Admin and Developer <b>|</b> Certified Web Developer</p>
+        </div>
+    </header>
+
+    <section class="summary">
+        <h2>Summary</h2>
+        <p>I possess adequate knowledge of prerequisites and perseverance to accomplish the task specified. My epistemophilia makes me apt for the role.</p>
+    </section>
+
+    <section class="experience">
+        <h2>Experience</h2>
+        <p><strong>Project Assistant, NIT Warangal</strong> (Nov 2024 - Present)</p>
+        <p>Working on Video Processing for Traffic Analysis using Python for Advanced Transport Modelling and Simulation.</p>
+    </section>
+
+    <section class="education">
+        <h2>Education</h2>
+        <p><strong>B.Tech, Computer Science & Engineering</strong></p>
+        <p>Balaji Institute of Technology and Science (2019 - 2023), CGPA: 7.1</p>
+    </section>
+
+    <section class="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <strong>Advanced Transport Modelling & Simulation:</strong>
+                <p>Traffic Analysis using Python.</p>
+            </li>
+            <li>
+                <strong>Department Website:</strong>
+                <p>Built a functional website using HTML, CSS, and JavaScript.</p>
+            </li>
+            <li>
+                <strong>School System Application:</strong>
+                <p>Developed an application using Salesforce automation tools.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <p>Python, C, HTML, CSS, JavaScript, Salesforce Admin & Developer</p>
+    </section>
+    
+    <section class="lang">
+        <h2>Languages</h2>
+        <p>English , Telugu , Hindi</p>
+    </section>
+
+</body>
+</html>
